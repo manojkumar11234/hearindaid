@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/android_earphones"
+
+    >
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"> -->
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="60dp"
+                android:text="Record"
+
+                android:theme="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/buttonPlayback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginBottom="60dp"
+                android:text="Playback" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginBottom="10dp"
+                android:text="Stop" />
+
+            <Button
+                android:id="@+id/buttonEQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onSendMessage"
+                android:text="SPEECH TO TEXT" />
+        </LinearLayout> -->
+        <!-- <Button
+             android:id="@+id/buttonShowCustomDialog"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="150dp"
+             android:layout_marginBottom="60dp"
+
+             android:text="" />
+
+         <TextView
+             android:id="@+id/text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="150dp"
+             android:layout_marginBottom="60dp"
+             android:text="display equalizer" />-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnRecord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.2"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_record"
+                android:onClick="newrecord"/>
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.2"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_play"
+                android:onClick="newplay"/>
+
+
+
+            <ImageButton
+                android:id="@+id/btnSpeechtoText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.2"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_speechtotext"
+                android:onClick="onSendMessage"/>
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.2"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_settings"
+                android:onClick="onEqualizer"/>
+            <ImageButton
+                android:id="@+id/btninfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.2"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/info"
+                android:onClick="onInfo"/>
+        </LinearLayout>
+   <!-- </LinearLayout> -->
+    <!-- id of a Seek bar used to uniquely identify it-->
+
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sai.soundequalizer">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_sound"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="EQUALIZER SETTINGS"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.CATEGORY_CONTENT_MUSIC" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".speechtotext"
+            android:label="SpeechToText"
+            android:parentActivityName=".MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+            >
+        </activity>
+        <activity android:name=".MainActivity3"
+
+            android:label="SpeechToText"
+            android:parentActivityName=".MainActivity">
+
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".PreTestInformation"
+            android:label="@string/title_activity_pre_test_information"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity3" />
+        </activity>
+        <activity
+            android:name=".TestProctoring"
+            android:label="@string/title_activity_test_proctoring"
+            android:screenOrientation="portrait" >
+            android:parentActivityName=".MainActivity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity3" />
+        </activity>
+        <activity
+            android:name=".TestComplete"
+            android:label="@string/title_activity_test_complete"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity3" />
+        </activity>
+        <activity
+            android:name=".ExportData"
+            android:label="@string/title_activity_export_data"
+            android:parentActivityName=".MainActivity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity3" />
+        </activity>
+        <activity
+            android:name=".Pre_Calibration"
+            android:label="@string/title_activity_pre__calibration"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity3" />
+        </activity>
+        <activity
+            android:name=".Calibration"
+            android:label="@string/title_activity_calibration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ExportComplete"
+            android:label="@string/title_activity_export_complete"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ExportData" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExportData" />
+        </activity>
+        <activity
+            android:name=".CalibrationComplete"
+            android:label="@string/title_activity_calibration_complete"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Pre_Calibration" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pre_Calibration" />
+        </activity>
+        <activity
+            android:name=".Acknowledgements"
+            android:label="@string/title_activity_acknowledgements"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity3" />
+        </activity>
+        <activity
+            android:name=".ExportError"
+            android:label="@string/title_activity_export_error"
+            android:parentActivityName=".ExportData" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExportData" />
+        </activity>
+        <activity
+            android:name=".TestLookup"
+            android:label="@string/title_activity_test_lookup"
+            android:parentActivityName=".MainActivity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity3" />
+        </activity>
+        <activity
+            android:name=".TestData"
+            android:label="@string/title_activity_test_data"
+            android:parentActivityName=".TestLookup">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="TestLookup" />
+        </activity>
+    </application>
+
+</manifest>

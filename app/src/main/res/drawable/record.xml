@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--  android:exitFadeDuration="@android:integer/config_mediumAnimTime">-->
+    <!--add config_mediumAnimTime to show the changing states in slow motion-->
+    <!--the order is important(the first matching states got rendered first)-->
+    <item android:drawable="@drawable/btn_pause" android:state_selected="true"></item>
+    <item android:drawable="@drawable/btn_pause" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/btn_record"></item>
+</selector>
